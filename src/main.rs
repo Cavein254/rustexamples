@@ -1,9 +1,7 @@
-fn main() {
-    println!("Hello, World!");
-
-    another_function();
+fn main(){
+    another_fn(5)
 }
 
-fn another_function(){
-println!("Calling another function here");
+fn another_fn(x:i32){
+    println!("The value of the function x is {x}");
 }
