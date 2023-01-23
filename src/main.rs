@@ -1,7 +1,7 @@
-fn main() {
-print_label(5,'h');
+fn f(x:i32) {
+println!("{x}");
 }
 
-fn print_label(value:i32,unit_label:char) {
-println!("The value of {value} is {unit_label}");
+fn main(){
+    f(0);
 }
