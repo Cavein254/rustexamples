@@ -1,23 +1,10 @@
 fn main() {
-    let values = vec![1, 2, 3, 4, 5];
+    let arr = [10, 20, 30, 40, 50];
+    let first = arr[0];
+    println!("first {}", first);
 
-    for value in &values {
-        println!("Value {} :", value);
+    for i in 0..=4 {
+        println!("[{}]  = {}", i, arr[i]);
     }
-
-    if values.len() > 5 {
-        println!("The values in values {}:", values.len());
-    }
-
-    match values.len() {
-        0 => println!("Empty"),
-        1 => println!("One value"),
-        2..=10 => println!("Between two and ten"),
-        11 => println!("Eleven values"),
-        _ => println!("Many Values"),
-    }
-
-    // while let some(value) = values.pop() {
-    //     println!("Value = {value}");
-    // }
+    println!("length {}", arr.len());
 }
