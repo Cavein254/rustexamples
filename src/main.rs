@@ -1,10 +1,15 @@
 fn main() {
-    let arr = [10, 20, 30, 40, 50];
-    let first = arr[0];
-    println!("first {}", first);
+    let mut v = Vec::new();
+    v.push(10);
+    v.push(100);
+    v.push(30);
+    v.push(50);
+    v.push(70);
 
-    for i in 0..=4 {
-        println!("[{}]  = {}", i, arr[i]);
-    }
-    println!("length {}", arr.len());
+    // let first = [0];
+    let maybe_first = v.get(0);
+
+    println!("v is {:?}", v);
+    // println!("first is {}", first);
+    println!("maybe_first is {:?}", maybe_first);
 }
